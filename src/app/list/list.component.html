@@ -1,0 +1,5 @@
+<div class="container" [style.height.px]="height" (scroll)="handleScroll($event)">
+  <ng-container *ngFor="let item of items">
+    <div [style.height.px]="itemHeight">{{item}}</div>
+  </ng-container>
+</div>
